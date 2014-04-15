@@ -1,0 +1,372 @@
+.calling {
+	margin-top:35px;
+	margin-left:35px;
+}
+#stopButtons {
+	margin-left:2px;
+}
+.busButton {
+	margin-top:-28px !important;
+	background-color: #660000;
+	color: yellow;
+	font-weight: bold;
+	margin-right: 2px;	
+	-moz-border-radius: 7px;
+	border-top-left-radius: 7px;
+	-moz-border-radius-topleft: 7px;
+	border-top-right-radius: 7px;
+	-moz-border-radius-topright: 7px;
+	border-bottom-right-radius: 7px;
+	-moz-border-radius-bottomright: 7px;
+	border-bottom-left-radius: 7px;
+}
+.favBusStopContainerList {
+	list-style: none outside none;    
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    padding: 5px 12px;
+    background-color:white;
+    color: black;
+}
+.favouriteStopButton {
+	list-style: none outside none;    
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    padding: 5px 12px;
+    background-color: black;
+    font-weight : bold;
+    color: white;
+	-moz-border-radius: 7px;
+	border-top-left-radius: 7px;
+	-moz-border-radius-topleft: 7px;
+	border-top-right-radius: 7px;
+	-moz-border-radius-topright: 7px;
+	border-bottom-right-radius: 7px;
+	-moz-border-radius-bottomright: 7px;
+	border-bottom-left-radius: 7px;
+    margin-top:4px;
+    margin-left:-20px;
+}
+.busButton:hover {
+	background-color: #B32D2D;
+}
+.stattable td{
+	border: solid thin black !important;
+	padding: 2px;
+}
+.stattable th{
+	background-color: black;
+	font-weight: bold;
+	color: white;
+	padding: 2px;
+	border: solid thin white !important;
+}
+.statbold {
+	color:black !important;
+}
+.triangle {
+	width: 0;
+	/*set dimensions of DIV to 0 so its borders collapse and touch one another*/
+	height: 0;
+	border-color: transparent transparent #FF7518 transparent;
+	/*top, right, bottom, and left border*/
+	border-style: solid;
+	border-width: 10px; /*width of each border*/
+}
+.triangle-stops {
+	margin-left:165px;
+}
+.triangle-menu {
+	margin-left:300px;
+}
+.triangle-buses {
+	margin-left:20px;
+}
+
+.tutorialButton {
+	margin-top: 10px !important;
+	display: block;
+}
+
+.downarrowdiv:after { /*arrow added to downarrowdiv DIV*/
+	content: '';
+	display: block;
+	position: absolute;
+	top: 100%; /*should be set to 100% */
+	left: 30px;
+	width: 0;
+	height: 0;
+	border-color: #FF7518 transparent transparent transparent;
+	/*border color should be same as div div background color*/
+	border-style: solid;
+	border-width: 10px;
+}
+
+.leftarrowdiv:after { /*arrow added to leftarrowdiv DIV*/
+	content: '';
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: -20px; /*should be set to -border-width x 2 */
+	width: 0;
+	height: 0;
+	border-color: transparent #FF7518 transparent transparent;
+	/*border color should be same as div div background color*/
+	border-style: solid;
+	border-width: 10px;
+}
+
+.rightarrowdiv:after { /*arrow added to rightarrowdiv DIV*/
+	content: '';
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 100%; /*should be set to 100% */
+	width: 0;
+	height: 0;
+	border-color: transparent transparent transparent black;
+	/*border color should be same as div div background color*/
+	border-style: solid;
+	border-width: 10px;
+}
+
+.slidedown-menu {
+	list-style: none;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	*border-right-width: 2px;
+	*border-bottom-width: 2px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box
+}
+
+.slidedown-menu.pull-right {
+	right: 0;
+	left: auto
+}
+
+.slidedown-menu .divider {
+	*width: 100%;
+	height: 1px;
+	margin: 9px 1px;
+	*margin: -5px 0 5px;
+	overflow: hidden;
+	background-color: #e5e5e5;
+	border-bottom: 1px solid #fff
+}
+
+.slidedown-menu>li>a {
+	display: block;
+	padding: 3px 20px;
+	clear: both;
+	font-weight: normal;
+	line-height: 20px;
+	color: #999;
+	white-space: nowrap
+}
+
+.slidedown-menu>li>a:hover,.slidedown-menu>li>a:focus,.slidedown-submenu:hover>a,.slidedown-submenu:focus>a
+	{
+	color: #fff;
+	text-decoration: none;
+	background-color: #007af5;
+	background-image: -moz-linear-gradient(top, #007fff, #0072e6);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#007fff),
+		to(#0072e6) );
+	background-image: -webkit-linear-gradient(top, #007fff, #0072e6);
+	background-image: -o-linear-gradient(top, #007fff, #0072e6);
+	background-image: linear-gradient(to bottom, #007fff, #0072e6);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff007fff',
+		endColorstr='#ff0072e6', GradientType=0 )
+}
+
+.slidedown-menu>.active>a,.slidedown-menu>.active>a:hover,.slidedown-menu>.active>a:focus
+	{
+	color: #fff;
+	text-decoration: none;
+	background-color: #007af5;
+	background-image: -moz-linear-gradient(top, #007fff, #0072e6);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#007fff),
+		to(#0072e6) );
+	background-image: -webkit-linear-gradient(top, #007fff, #0072e6);
+	background-image: -o-linear-gradient(top, #007fff, #0072e6);
+	background-image: linear-gradient(to bottom, #007fff, #0072e6);
+	background-repeat: repeat-x;
+	outline: 0;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff007fff',
+		endColorstr='#ff0072e6', GradientType=0 )
+}
+
+.slidedown-menu>.disabled>a,.slidedown-menu>.disabled>a:hover,.slidedown-menu>.disabled>a:focus
+	{
+	color: #dfdfdf
+}
+
+.slidedown-menu>.disabled>a:hover,.slidedown-menu>.disabled>a:focus {
+	text-decoration: none;
+	cursor: default;
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false )
+}
+
+.dfifahrten {
+	color: yellow;
+	font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.dfititel {
+	color: white;
+	font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+	font-size: 18pt;
+	font-weight: bold;
+}
+
+.dfititelsmall {
+	color: white;
+	font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.pagedefault {
+	color: black;
+	font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+	font-size: 10pt;
+}
+
+.monospace {
+	color: black;
+	font-family: Courier;
+	font-size: 12pt;
+}
+
+.pagetitel {
+	color: black;
+	font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+	font-size: 24pt;
+}
+
+.textklein {
+	color: #000000;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	text-decoration: none;
+}
+
+.titelprodukte {
+	color: #B67F64;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.titel {
+	color: #000000;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.lttext {
+	color: #708090;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.bsname {
+	color: white;
+	font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+	font-size: 72pt;
+	font-weight: bold;
+}
+
+.hdtitle {
+	color: white;
+	font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+	font-size: 36pt;
+	font-weight: bold;
+}
+
+.trinfo {
+	color: yellow;
+	font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+	font-size: 48pt;
+	font-weight: bold;
+}
+
+#maintable {
+	background-color: black;
+}
+
+h3 {
+	color: white;
+}
+
+body {
+	background-color: white;
+}
+
+#routeId {
+	width: 70px;
+}
+
+.bolder-menu {
+	font-weight: bold !important;
+	color: black !important;
+}
+
+#menu {
+	font-size: 17px;
+	font-weight: bold !important;
+}
+
+#maincontainer {
+	margin-left: -18px;
+}
+
+#times {
+	margin-top: 7px;
+}
+
+#hour,#minute {
+	width: 60px;
+}
+
+.btn-black {
+	-moz-border-radius: 7px;
+	border-top-left-radius: 7px;
+	-moz-border-radius-topleft: 7px;
+	border-top-right-radius: 7px;
+	-moz-border-radius-topright: 7px;
+	border-bottom-right-radius: 7px;
+	-moz-border-radius-bottomright: 7px;
+	border-bottom-left-radius: 7px;
+	margin-top: -10px;
+	margin-left: 5px;
+	background-color: black;
+	color:white;
+}
+
+.cornered {
+	border-radius: 4px 4px 4px 4px
+}
+
+#now {
+	margin-top: 0px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Selenium Development Tests" verbose="5">
+
+	<parameter name="browserType" value="chrome"/>
+	
+	<test name="This passes">
+		<parameter name="title" value="Title is core"/>	
+		<parameter name="properties.file" value="corepage.properties"/>	
+		<parameter name="flow" value="flow1"/>
+		<groups>
+			<run>
+				<exclude name="not_googlechrome"/>
+			</run>
+		</groups>
+   		<classes>
+   			<class name="com.rdfgroup.selenium.unit.tests.AllTests" >
+   				<methods>
+   					<include name="testAllSeleniumCore"/>
+   					<exclude name="testAllSeleniumLinks"/>
+   					<include name="testAllSeleniumForm"/>
+   				</methods>
+   			</class>
+   		</classes>
+	</test>
+	
+	<test name="This fails">
+	    <!-- This is supposed to fail with the invalid title -->
+		<parameter name="title" value="Title is core 2"/>	
+		<parameter name="properties.file" value="corepage.properties"/>	
+		<parameter name="flow" value="flow1"/>
+		<groups>
+			<run>
+				<exclude name="not_googlechrome"/>
+			</run>
+		</groups>
+   		<classes>
+   			<class name="com.rdfgroup.selenium.unit.tests.AllTests" >
+   				<methods>
+   					<include name="testAllSeleniumLinks"/>
+   					<exclude name="testAllSeleniumForm"/>
+   					<include name="testAllSeleniumCore"/>
+   				</methods>
+   			</class>
+   		</classes>
+	</test>
+	
+</suite>

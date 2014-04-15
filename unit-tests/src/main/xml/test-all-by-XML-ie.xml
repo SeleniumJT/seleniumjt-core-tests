@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Selenium Development Tests" verbose="5">
+
+	<parameter name="browserType" value="ie"/>
+	
+	<test name="This passes">
+		<parameter name="title" value="Title is core"/>	
+		<parameter name="properties.file" value="corepage.properties"/>	
+		<parameter name="flow" value="flow1"/>
+		<groups>
+			<run>
+				<exclude name="not_googlechrome"/>
+			</run>
+		</groups>
+   		<classes>
+   			<class name="com.rdfgroup.selenium.unit.views.byXml.CoreTestsPageByXml" >
+   				<methods>
+   					<include name="gotoCorePage"/>
+   					<include name="verifyCoreTests"/>
+   				</methods>
+   			</class>
+   			<class name="com.rdfgroup.selenium.unit.views.byXml.AHrefLinksPageByXml" >
+   				<methods>
+   					<include name="gotoLinksPage"/>
+   					<include name="verifyAllLinksWork"/>
+   				</methods>
+   			</class>
+   			<class name="com.rdfgroup.selenium.unit.views.byXml.FormPageByXml" >
+   				<methods>
+   					<include name="goTo"/>
+   					<include name="validateFormElements"/>
+   				</methods>
+   			</class>
+   		</classes>
+	</test>
+	
+</suite>

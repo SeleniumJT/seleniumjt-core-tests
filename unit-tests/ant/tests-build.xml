@@ -1,0 +1,35 @@
+<project name="SeleniumJT-Core-UnitTests-Tests" basedir="../">
+
+	<property file="ant/my.build.properties" />
+	<property file="src/main/resource/properties/testng.xml.build.properties" />
+	
+		<path id="code.classpath">
+			<pathelement location="${repository}/org/apache/commons/commons-lang3/3.2-SNAPSHOT/commons-lang3-3.2-SNAPSHOT.jar"/>
+			<pathelement location="${repository}/commons-io/commons-io/2.4/commons-io-2.4.jar"/>
+			<pathelement path="${repository}/com/rdfgroup/selenium/seleniumjt-core/1.0/seleniumjt-core-1.0.jar" />
+			<pathelement path="src/main/resource"/>
+	  	</path>
+
+		<target name="create-testng-xml" description="Creates the necessary xml files">
+			<java classname="com.jt.selenium.utils.testng.xml.builder.RunTestNgBuilder" classpathref="code.classpath" fork="true">
+	         <arg value="${user.dir}"/>
+	       </java>
+		</target>
+
+		<target name="convert-ide" description="Creates the necessary xml files">
+		    <java classname="com.jt.selenium.utils.SeleneseConvertor" classpathref="code.classpath" fork="true"/>
+		</target>
+		
+
+<target name="create-testng-xml-in-debug-on-port-5432">
+		<java classname="com.jt.selenium.utils.testng.xml.builder.RunTestNgBuilder" classpathref="code.classpath" fork="true">
+			<jvmarg value="-Xdebug" />
+			<jvmarg value="-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5432" />
+			<arg value="${user.dir}" />
+		</java>
+	</target>
+
+
+</project>
+
+

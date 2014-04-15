@@ -1,0 +1,18 @@
+package com.example.tests;
+
+import com.thoughtworks.selenium.*;
+import org.testng.annotations.*;
+import static org.testng.Assert.*;
+import java.util.regex.Pattern;
+
+public class in extends SeleneseTestNgHelper {
+	@Test public void testIn() throws Exception {
+		selenium.open("/selenium/page/form");
+		selenium.click("name=sex");
+		selenium.click("name=vehicle");
+		selenium.click("id=sex");
+		selenium.click("id=vehicle");
+		selenium.select("id=cars", "label=Saab");
+		selenium.type("css=textarea", "Here are my details");
+	}
+}
