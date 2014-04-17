@@ -5,6 +5,7 @@
 	<artifactId>seleniumjt-core-unit-tests</artifactId>
 	<version>1.0</version>
 
+
 	<properties>
 
 		<!-- Generic properties -->
@@ -14,10 +15,8 @@
 
 		<!-- Spring -->
 		<spring-framework.version>3.2.3.RELEASE</spring-framework.version>
-
-		<org.aspectj-version>1.7.4</org.aspectj-version>
-
-		<seleniumjt-version>1.2.2</seleniumjt-version>
+		<seleniumjt-version>1.2.3</seleniumjt-version>
+		<selenium-version>2.39.0</selenium-version>
 
 	</properties>
 
@@ -37,13 +36,13 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>2.41.0</version>
+			<version>${selenium-version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-server</artifactId>
-			<version>2.41.0</version>
+			<version>${selenium-version}</version>
 		</dependency>
 
 		<dependency>
@@ -66,21 +65,43 @@
 			<version>6.1.1</version>
 		</dependency>
 
-		<!-- AspectJ -->
-		<dependency>
-			<groupId>org.aspectj</groupId>
-			<artifactId>aspectjrt</artifactId>
-			<version>${org.aspectj-version}</version>
-		</dependency>
+		<!-- CUCUMBER-JVM -->
 
 		<dependency>
-			<groupId>org.aspectj</groupId>
-			<artifactId>aspectjtools</artifactId>
-			<version>${org.aspectj-version}</version>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-picocontainer</artifactId>
+			<version>1.1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>1.1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>1.1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>1.1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
 		</dependency>
 
 	</dependencies>
+	<repositories>
 
+		<repository>
+			<id>sonatype</id>
+			<url>https://oss.sonatype.org/content/groups/public/</url>
+		</repository>
+
+	</repositories>
 	<build>
 		<resources>
 			<resource>
@@ -102,7 +123,7 @@
 						<configuration>
 							<artifactItems>
 								<artifactItem>
-									<groupId>com.rdfgroup.selenium</groupId>
+									<groupId>net.sf.seleniumjt</groupId>
 									<artifactId>seleniumjt-core</artifactId>
 									<version>${seleniumjt-version}</version>
 									<type>jar</type>
@@ -118,6 +139,7 @@
 			</plugin>
 		</plugins>
 	</build>
+
 
 
 </project>
