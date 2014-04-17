@@ -5,6 +5,7 @@
 			<div class="testtext" id="hiddendiv" style="display:none">I am hidden</div>
 			<div class="testtext" id="notext"></div>
 			<div class="testtext" id="target">This is the target to change</div>
+			<div class="testtext" id="newbuttondiv">A button should appear here after 2 seconds</div>
 			<div class="testtext" id="multitext">ThisText ThisText ThisText ThisText ThisText</div>
 			<div id="attributechecker" class="correctclass"></div>
 		</div>
@@ -21,6 +22,7 @@
 		<button class="btn btn-primary btn-space" id="deleteelement">Delete Element</button>
 		<button class="btn btn-primary btn-space" id="changecss">Change CSS</button>
 		<button class="btn btn-primary btn-space" id="showimg">Show image</button>
+		<button class="btn btn-primary btn-space" id="newbutton">New Button</button>
 		
 		<div id="js_error"></div>
 		<div id="js_error_span_url">setting-a-property-that-has-only-a-getter</div>
@@ -71,6 +73,10 @@
 				
 				$('#deleteelement').click(function() {
 					setTimeout(function() {$('#target').remove();},time);
+				});
+				
+				$('#newbutton').click(function() {
+					setTimeout(function() {$('#newbuttondiv').html('<button id="newclick">Clickme</button>');},time);
 				});
 				
 				$('#changecss').click(function() {

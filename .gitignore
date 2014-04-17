@@ -5,3 +5,4 @@ unit-tests/test-output/
 server/.settings/
 unit-tests/.classpath
 unit-tests/.project
+server/target/

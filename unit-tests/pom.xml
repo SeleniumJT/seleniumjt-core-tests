@@ -17,13 +17,13 @@
 
 		<org.aspectj-version>1.7.4</org.aspectj-version>
 
-		<seleniumjt-version>1.1.1</seleniumjt-version>
+		<seleniumjt-version>1.2.2</seleniumjt-version>
 
 	</properties>
 
 	<dependencies>
 		<dependency>
-			<groupId>com.rdfgroup.selenium</groupId>
+			<groupId>net.sf.seleniumjt</groupId>
 			<artifactId>seleniumjt-core</artifactId>
 			<version>${seleniumjt-version}</version>
 		</dependency>

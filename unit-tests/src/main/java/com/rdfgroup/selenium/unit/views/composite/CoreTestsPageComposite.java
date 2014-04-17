@@ -61,6 +61,9 @@ public class CoreTestsPageComposite
 		test.runningInSafari();
 		
 		test.screenShot("testScreenshot2");
+
+		test.click("newbutton");
+		test.click("newclick");
 		
 		
 	}
@@ -183,6 +186,7 @@ public class CoreTestsPageComposite
 		test.clearLocalStorage();
 		Assert.assertTrue(test.getLocalStorageLength() == 0);
 	}
+	
 
 
 }

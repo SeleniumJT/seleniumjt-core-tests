@@ -8,5 +8,5 @@
 </listAttribute>
 <stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="${M2_HOME}\bin\mvn.bat"/>
 <stringAttribute key="org.eclipse.ui.externaltools.ATTR_TOOL_ARGUMENTS" value="jetty:run"/>
-<stringAttribute key="org.eclipse.ui.externaltools.ATTR_WORKING_DIRECTORY" value="${workspace_loc:/SeleniumTestServer}"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_WORKING_DIRECTORY" value="${workspace_loc:/seleniumjt-test-server}"/>
 </launchConfiguration>
