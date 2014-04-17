@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.rdfgroup</groupId>
 	<artifactId>SeleniumTestServer</artifactId>
-	<name>SeleniumTestServer</name>
+	<name>seleniumjt-test-server</name>
 	<packaging>war</packaging>
 	<version>1.0.0</version>
 	<properties>
