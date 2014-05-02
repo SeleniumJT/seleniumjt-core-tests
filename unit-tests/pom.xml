@@ -15,7 +15,7 @@
 
 		<!-- Spring -->
 		<spring-framework.version>3.2.3.RELEASE</spring-framework.version>
-		<seleniumjt-version>1.2.3</seleniumjt-version>
+		<seleniumjt-version>1.2.4</seleniumjt-version>
 		<selenium-version>2.39.0</selenium-version>
 
 	</properties>
